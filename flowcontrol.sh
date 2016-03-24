@@ -7,9 +7,9 @@ if [ "$username" == "root" ] ; then
 	read gotpower
 	if [ "$gotpower" == "yes" ] || [ "$gotpower" == "y" ] ; then
 		echo "You've got the power!"
-		echo "How much?"
+		echo "How much power do you have from 1-10?"
 		read powerlevel
-		if [ "$powerlevel" -le 4 ] ; then
+		if [ "$powerlevel" -ge 7 ] ; then
 			echo "WOW! That is Awesome!"
 		else
 			echo "You're worthless and weak!"
